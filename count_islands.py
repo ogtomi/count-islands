@@ -40,6 +40,9 @@ def land_check(data, M, N, row_new, col_new):
             land_check(data, M, N, row_new+1, col_new+1)
 
 def count_islands(data):
+    if data == None or len(data) == 0:
+        return 0
+        
     M = len(data[0])
     N = len(data)
         
