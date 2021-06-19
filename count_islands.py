@@ -1,8 +1,11 @@
 import sys
 
-path = sys.argv[1]
-with open(path, 'r') as f:
-    content = f.read().split('\n')
+try:
+    path = sys.argv[1]
+    with open(path, 'r') as f:
+        content = f.read().split('\n')
+except Exception as e:
+    sys.stderr.write(str(e))
 
 def get_2d(data, M, N):
     arr_2d = []
@@ -58,4 +61,7 @@ def count_islands(data):
                 count += 1
     return count
 
-print(count_islands(content))
+try:
+    sys.stdout.write(str(count_islands(content)))
+except Exception as e:
+    sys.stderr.write(str(e))
