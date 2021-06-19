@@ -1,4 +1,6 @@
-path = 'D:\Random\count-islands\data.txt'
+import sys
+
+path = sys.argv[1]
 with open(path, 'r') as f:
     content = f.read().split('\n')
 

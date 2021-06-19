@@ -1,3 +1,2 @@
 #!/bin/bash
-
-python  count_islands.py
+python  count_islands.py $1
