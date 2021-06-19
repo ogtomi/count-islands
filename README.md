@@ -1,2 +1,2 @@
 # count-islands
-Interview task 
+Interview task
